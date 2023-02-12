@@ -18,3 +18,16 @@
 const smallestEvenMultiple = function (n) {
   return n % 2 === 0 ? n : n * 2
 }
+
+const smallestEvenMultipleOption2 = function (n) {
+  let multipleFound = false
+  let i = 1
+  while (multipleFound === false) {
+    if ((n * i) % 2 === 0) {
+      multipleFound = true
+    } else {
+      i++
+    }
+  }
+  return i * n
+}
