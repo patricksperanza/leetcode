@@ -46,3 +46,9 @@ const kidsWithCandies = function (candies, extraCandies) {
   }
   return result
 }
+
+// more optimal solution
+const kidsWithCandiesOpt2 = function (candies, extraCandies) {
+  const maxNum = Math.max(...candies)
+  return candies.map((kid) => kid + extraCandies >= maxNum)
+}
