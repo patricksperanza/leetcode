@@ -32,3 +32,11 @@ const singleNumber = function (nums) {
     if (ht[key] === 1) return key
   }
 }
+
+function singleNumberXOR(nums) {
+  let result = 0
+  for (let num of nums) {
+    result ^= num
+  }
+  return result
+}
