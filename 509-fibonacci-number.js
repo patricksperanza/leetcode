@@ -10,6 +10,7 @@
 // Output: 1
 // Explanation: F(2) = F(1) + F(0) = 1 + 0 = 1.
 
+// Method: Recursion with Memoization
 let cache = {}
 const fib = function (n) {
   if (cache[n]) return cache[n]
