@@ -12,5 +12,5 @@
 // Output: [4,9,9,49,121]
 
 const sortedSquares = function (nums) {
-  return nums.map((num) => num ** 2).sort((a, b) => a - b)
-}
+  return nums.map((num) => num ** 2).sort((a, b) => a - b);
+};
